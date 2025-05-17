@@ -1,0 +1,88 @@
+/* Reset & Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif;
+  background: linear-gradient(120deg, #ffe29f, #ffa99f, #ba68ff, #00cfff);
+  background-size: 400% 400%;
+  animation: gradientShift 18s ease infinite;
+  color: #111439;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #283e51, #485563);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #c0d6df;
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #dcdcdc;
+    padding-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #283e51;
+    color: #ccc;
+    font-size: 0.95rem;
+    margin-top: 3rem;
+    border-top: 3px solid #485563;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #a8d0e6;
+}
