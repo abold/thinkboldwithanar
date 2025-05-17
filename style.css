@@ -82,3 +82,36 @@ footer a {
 footer a:hover {
     color: #f1c6d1;  /* Soft pink hover */
 }
+
+/* Project Gallery */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background: #ffffff;
+  border: 1px solid #e2e3eb;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #111439;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: #3f4e96;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
