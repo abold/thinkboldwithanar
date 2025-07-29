@@ -96,13 +96,21 @@
 }
 /* deine bisherigen Styles ... */
 .project-card {
-  width: 400px;
-  height: 250px;
-  background-image: url('images/insurance-model.jpg');
+  position: relative;
+  background-image: url('images/image.jpg');
   background-size: cover;
   background-position: center;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: transform 0.2s ease;
+  text-align: left;
+  overflow: hidden;
 }
 
 .project-card::before {
