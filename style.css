@@ -15,13 +15,19 @@ html, body {
 
 /* Grundlegende Layout-Anpassung */
 header {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+  height: auto;           /* nicht volle Höhe mehr */
+  padding: 1rem 3rem;     /* bisschen Innenabstand */
   background: #e2ece9;
-  box-sizing: border-box;
-  padding-top: 5rem; /* Platz unter dem Menü */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Oben ausrichten */
+  align-items: flex-start;     /* Linksbündig */
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;     /* optional für Begrenzung */
+  margin: 0 auto;        /* zentriert horizontal */
 }
+
 
 /* NAVIGATION */
 nav {
@@ -67,15 +73,16 @@ nav ul li a:hover {
 }
 
 .hero-text h1 {
-  font-family: 'Lora', serif;
-  font-size: 3.5rem;
+  font-size: 5rem;       /* viel größer */
   font-weight: bold;
   margin: 0;
+  font-family: 'Playfair Display', serif;
   color: #111;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
 }
+
 .hero-text p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;     /* auch etwas größer */
   max-width: 600px;
   margin-top: 1rem;
   line-height: 1.6;
