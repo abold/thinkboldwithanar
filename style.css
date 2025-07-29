@@ -91,9 +91,10 @@ footer * {
   position: relative;
   z-index: 1;
 }
+
 .project-fullwidth {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* 2 Spalten */
   gap: 1.5rem;
   padding: 2rem;
   background-color: #eaf4f4;
@@ -169,16 +170,15 @@ footer * {
 }
 
 
-/* Responsive für kleinere Geräte */
 @media (max-width: 1024px) {
-  .project-card {
-    flex: 1 1 calc(50% - 1.5rem); /* zwei pro Zeile */
+  .project-fullwidth {
+    grid-template-columns: 1fr 1fr; /* immer noch zwei Spalten bei Tablets */
   }
 }
 
 @media (max-width: 600px) {
-  .project-card {
-    flex: 1 1 100%; /* eine pro Zeile */
+  .project-fullwidth {
+    grid-template-columns: 1fr; /* eine Spalte bei Smartphones */
   }
 }
 
