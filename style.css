@@ -104,7 +104,7 @@
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-  min-height: 200px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -117,7 +117,7 @@
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4); /* schwarzes halbtransparentes Overlay */
   border-radius: 16px;
   z-index: 0;
 }
@@ -126,7 +126,6 @@
   position: relative;
   z-index: 1;
 }
-
 
 .project-card:hover {
   transform: translateY(-5px);
