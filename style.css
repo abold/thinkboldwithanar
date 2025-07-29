@@ -24,15 +24,16 @@
     font-family: 'Lora', serif;
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
   }
-  header {
-    background: #e2ece9; /* or transparent / image */
-    color: #111;
-    height: 100vh; /* Full screen height */
-    position: relative;
-    padding: 0;
-    margin: 0;
-  }
-
+   header {
+     max-width: 100vw;  /* maximal so breit wie das Viewport */
+     overflow-x: hidden; /* keine horizontale Scrollleiste */
+     box-sizing: border-box; /* Padding und Border zählen zur Gesamtbreite */
+     padding-left: 3rem; /* falls du links Abstand möchtest */
+     padding-right: 3rem; /* rechts Abstand */
+     position: relative;
+     height: 100vh;
+     background: #e2ece9;
+   }
     nav {
     padding: 1rem 2rem;
     position: absolute;
