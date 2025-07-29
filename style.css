@@ -97,14 +97,13 @@
 /* deine bisherigen Styles ... */
 .project-card {
   position: relative;
-  background-image: url('images/image2.jpg');
   background-size: cover;
   background-position: center;
   color: white;
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-  height: 200px;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -117,7 +116,7 @@
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.4); /* schwarzes halbtransparentes Overlay */
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 16px;
   z-index: 0;
 }
@@ -125,6 +124,24 @@
 .project-card > * {
   position: relative;
   z-index: 1;
+}
+
+/* Verschiedene Bilder für jede card */
+
+.card1 {
+  background-image: url('images/insurance-model.jpg');
+}
+
+.card2 {
+  background-image: url('images/project2.jpg');
+}
+
+.card3 {
+  background-image: url('images/project3.jpg');
+}
+
+.card4 {
+  background-image: url('images/project4.jpg');
 }
 
 .project-card:hover {
