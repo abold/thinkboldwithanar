@@ -84,3 +84,46 @@
   footer a:hover {
     color: #a8b0f0;
   }
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background-color: #aec3b0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #2c3e50;
+}
+
+.project-card p {
+  margin: 0.5rem 0 1rem;
+  color: #333;
+}
+
+.project-card a {
+  color: #2c3e50;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
