@@ -129,19 +129,19 @@
 /* Verschiedene Bilder für jede card */
 
 .card1 {
-  background-image: url('images/insurance-model.jpg');
+  background-image: url('images/image.jpg');
 }
 
 .card2 {
-  background-image: url('images/project2.jpg');
+  background-image: url('images/image2.jpg');
 }
 
 .card3 {
-  background-image: url('images/project3.jpg');
+  background-image: url('images/image3.jpg');
 }
 
 .card4 {
-  background-image: url('images/project4.jpg');
+  background-image: url('images/image2.jpg');
 }
 
 .project-card:hover {
