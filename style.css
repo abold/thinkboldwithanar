@@ -123,29 +123,23 @@ footer * {
   background-size: cover;
   background-position: center;
   color: white;
-  /* padding: 2rem;  Entfernen */
-  border-radius: 0; /* oder kleiner Wert, je nach Geschmack */
-  box-shadow: none; /* optional, wenn keine Schatten gewünscht */
-  min-height: 300px; /* höher für größere Bilder */
-  width: 100%;
-  height: 100%;
+  padding: 2rem;               /* damit Text nicht am Rand klebt */
+  border-radius: 0;           /* oder auf 8px, je nach Geschmack */
+  box-shadow: none;           /* Schatten entfernen, optional */
+  min-height: 300px;          /* für schöne Höhe */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   transition: transform 0.2s ease;
   text-align: left;
   overflow: hidden;
+  background-repeat: no-repeat;
 }
 
 /* Overlay entfernen */
-/*.project-card::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 16px;
-  z-index: 0;
-}*/
+.project-card::before {
+  display: none;
+}
 
 .project-card > * {
   position: relative;
