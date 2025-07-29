@@ -91,15 +91,14 @@ footer * {
   position: relative;
   z-index: 1;
 }
-
 .project-fullwidth {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 2rem;
-  background-color: #eaf4f4; /* oder was du möchtest */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
+  padding: 2rem;
+  background-color: #eaf4f4;
 }
+
 /* deine bisherigen Styles ... */
 .project-card {
   position: relative;
