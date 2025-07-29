@@ -6,51 +6,66 @@
     color: #111;
     line-height: 1.6;
   }
-
-  .hero-stripe {
+  
+  .hero-text {
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    max-width: 600px;
   }
-
-  .hero-stripe h1 {
+  
+  .hero-text h1 {
     color: #111;
     font-size: 4rem;
     font-weight: bold;
     margin: 0;
+    font-family: 'Lora', serif;
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
   }
   header {
-    background: transparent; /* or a background image/color */
+    background: #e2ece9; /* or transparent / image */
     color: #111;
-    text-align: center;
-    padding: 2rem;
-    height: 100vh; /* Full height of viewport */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 100vh; /* Full screen height */
+    position: relative;
+    padding: 0;
+    margin: 0;
   }
+
+    nav {
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background: transparent; /* Optional: add color if needed */
+    z-index: 10;
+  }
+  
   nav ul {
     list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
     padding: 0;
-    margin-top: 1rem;
   }
-
+  
   nav ul li {
     display: inline-block;
-    margin: 0 15px;
   }
-
+  
   nav ul li a {
     color: #111;
     text-decoration: none;
     font-weight: 600;
+    font-family: 'Lora', serif;
     transition: color 0.3s ease;
   }
-
+  
   nav ul li a:hover {
     color: #444;
     text-decoration: underline;
   }
-
   section {
     max-width: 900px;
     margin: 2rem auto;
