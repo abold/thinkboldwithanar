@@ -95,7 +95,6 @@
   gap: 1.5rem;
 }
 /* deine bisherigen Styles ... */
-
 .project-card {
   position: relative;
   background-image: url('images/insurance-model.jpg');
@@ -117,7 +116,7 @@
 .project-card::before {
   content: "";
   position: absolute;
-  inset: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 16px;
   z-index: 0;
@@ -127,6 +126,7 @@
   position: relative;
   z-index: 1;
 }
+
 
 .project-card:hover {
   transform: translateY(-5px);
