@@ -94,11 +94,15 @@ footer * {
 
 .project-fullwidth {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 Spalten */
+  grid-template-columns: 1fr 1fr; /* zwei Spalten */
+  grid-auto-rows: minmax(200px, auto); /* Höhe der Zeilen */
   gap: 1.5rem;
   padding: 2rem;
   background-color: #eaf4f4;
+  max-width: 1200px;
+  margin: 0 auto; /* zentriert das Grid */
 }
+
 
 /* deine bisherigen Styles ... */
 .project-card {
@@ -117,6 +121,7 @@ footer * {
   text-align: left;
   overflow: hidden;
 }
+
 
 .project-card::before {
   content: "";
