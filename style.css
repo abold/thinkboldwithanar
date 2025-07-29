@@ -97,7 +97,7 @@
 /* deine bisherigen Styles ... */
 .project-card {
   position: relative;
-  background-image: url('images/insurance-model.jpg');
+  background-image: url('https://via.placeholder.com/600x400');
   background-size: cover;
   background-position: center;
   color: white;
