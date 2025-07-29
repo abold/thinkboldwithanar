@@ -2,13 +2,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Lora', serif;
-  background-color: #eaf4f4; /* Grundfarbe gesetzt */
+  background-color: #ffffff; /* Grundfarbe gesetzt */
   color: #2c3e50; /* dunkles Blau/Grau für guten Kontrast */
   line-height: 1.6;
 }
 
 header {
-  background: #eaf4f4;
+  background: #ffffff;
   color: #2c3e50;
   padding: 1rem;
   text-align: center;
