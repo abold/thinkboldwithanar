@@ -13,82 +13,67 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Grundlegende Layout-Anpassung */
 header {
-  height: auto;           /* nicht volle Höhe mehr */
-  padding: 1rem 3rem;     /* bisschen Innenabstand */
+  height: auto;
+  padding: 3rem 4rem;          /* großzügiges Padding für Luftigkeit */
   background: #e2ece9;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Oben ausrichten */
-  align-items: flex-start;     /* Linksbündig */
-  position: relative;
-  z-index: 1;
-  max-width: 1200px;     /* optional für Begrenzung */
-  margin: 0 auto;        /* zentriert horizontal */
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* leichter Schatten für Tiefe */
+  border-radius: 12px;        /* sanfte Rundungen */
 }
 
-
-/* NAVIGATION */
 nav {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  padding: 1.5rem 3rem;
-  box-sizing: border-box;
-  background-color: #fff8f0; /* heller Hintergrund für Sichtbarkeit */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  z-index: 10;
+  margin-bottom: 2rem;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: flex-start;
-  margin: 0;
+  justify-content: flex-start; /* Menü links ausrichten */
+  gap: 2rem;                   /* Abstand zwischen Links */
   padding: 0;
-  gap: 2rem;
+  margin: 0;
 }
 
 nav ul li a {
   color: #111;
+  font-weight: 700;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #444;
+  color: #3a88c7; /* dezentes Hellblau als Akzent */
   text-decoration: underline;
 }
 
-/* HERO-TEXT */
-.hero-text {
-  position: absolute;
-  bottom: 3rem;
-  left: 3rem;
-  max-width: calc(100vw - 6rem);
-}
-
 .hero-text h1 {
-  font-size: 5rem;       /* viel größer */
-  font-weight: bold;
+  font-size: 5.5rem;               /* etwas größer */
+  font-weight: 700;
   margin: 0;
   font-family: 'Playfair Display', serif;
-  color: #111;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+  color: #0d1b2a;                  /* dunkleres Blau statt Schwarz */
+  line-height: 1.1;
+  letter-spacing: 0.05em;
 }
 
 .hero-text p {
-  font-size: 1.5rem;     /* auch etwas größer */
-  max-width: 600px;
-  margin-top: 1rem;
-  line-height: 1.6;
-  color: #111;
+  font-size: 1.4rem;
+  max-width: 650px;
+  margin-top: 1.2rem;
+  color: #333;
   font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
 }
+
 
 footer {
   background-image: url('images/image.jpg');
