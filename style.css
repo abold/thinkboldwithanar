@@ -94,45 +94,69 @@
   background-color: #eaf4f4; /* oder was du möchtest */
   gap: 1.5rem;
 }
+/* deine bisherigen Styles ... */
 
-.project-box {
-  flex: 1 1 calc(25% - 1.5rem); /* vier Boxen nebeneinander mit Abstand */
-  background-color: #aec3b0;
+.project-card {
+  position: relative;
+  background-image: url('images/insurance-model.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
   padding: 2rem;
   border-radius: 16px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  color: #2c3e50;
-  text-align: left;
-  min-width: 240px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   transition: transform 0.2s ease;
+  text-align: left;
+  overflow: hidden;
 }
 
-.project-box:hover {
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  z-index: 0;
+}
+
+.project-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.project-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
-.project-box h3 {
-  margin-top: 0;
-  font-size: 1.6rem;
+.project-card h3,
+.project-card p,
+.project-card a {
+  color: white;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
 }
 
-.project-box a {
-  display: inline-block;
-  margin-top: 1rem;
-  color: #2c3e50;
+.project-card a {
   font-weight: bold;
   text-decoration: underline;
+  display: inline-block;
+  margin-top: 1rem;
 }
+
 
 /* Responsive für kleinere Geräte */
 @media (max-width: 1024px) {
-  .project-box {
+  .project-card {
     flex: 1 1 calc(50% - 1.5rem); /* zwei pro Zeile */
   }
 }
 
 @media (max-width: 600px) {
-  .project-box {
+  .project-card {
     flex: 1 1 100%; /* eine pro Zeile */
   }
 }
