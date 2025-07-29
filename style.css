@@ -13,42 +13,43 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Header */
+/* Grundlegende Layout-Anpassung */
 header {
-  width: 100%;
-  height: 100vh;  /* volle Höhe des Viewports */
-  padding: 1rem 3rem;
-  box-sizing: border-box;
-  background: #e2ece9;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: relative;
-  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background: #e2ece9;
+  box-sizing: border-box;
+  padding-top: 5rem; /* Platz unter dem Menü */
+}
+
+/* NAVIGATION */
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  box-sizing: border-box;
+  background-color: #fff8f0; /* heller Hintergrund für Sichtbarkeit */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  z-index: 10;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-nav ul li {
-  margin: 0 15px;
-  white-space: nowrap;
-  flex-shrink: 0;
+  gap: 2rem;
 }
 
 nav ul li a {
   color: #111;
   text-decoration: none;
   font-weight: 600;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
@@ -57,24 +58,22 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* HERO-TEXT */
 .hero-text {
   position: absolute;
   bottom: 3rem;
   left: 3rem;
   max-width: calc(100vw - 6rem);
-  margin: 0;
-  padding: 0;
 }
 
 .hero-text h1 {
-  color: #111;
-  font-size: 4rem;
+  font-family: 'Lora', serif;
+  font-size: 3.5rem;
   font-weight: bold;
   margin: 0;
-  font-family: 'Lora', serif;
+  color: #111;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
 }
-
 
 footer {
   background-image: url('images/image.jpg');
