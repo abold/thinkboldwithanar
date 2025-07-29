@@ -7,14 +7,14 @@
     line-height: 1.6;
   }
   
-  .hero-text {
-    position: absolute;
-    bottom: 3rem;
-    left: 3rem;
-    max-width: 600px; /* oder z.B. 80vw für 80% der Viewport-Breite */
-    margin: 0;
-    padding: 0;
-  }
+ .hero-text {
+   position: absolute;
+   bottom: 3rem;
+   left: 3rem;
+   max-width: calc(100vw - 6rem); /* damit der Text nicht über den Rand ragt */
+   margin: 0;
+   padding: 0;
+ }
   
   .hero-text h1 {
     color: #111;
