@@ -84,46 +84,54 @@
   footer a:hover {
     color: #a8b0f0;
   }
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  margin-top: 2rem;
+.project-fullwidth {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #eaf4f4; /* oder was du möchtest */
+  gap: 1.5rem;
 }
 
-.project-card {
+.project-box {
+  flex: 1 1 calc(25% - 1.5rem); /* vier Boxen nebeneinander mit Abstand */
   background-color: #aec3b0;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  color: #2c3e50;
   text-align: left;
+  min-width: 240px;
   transition: transform 0.2s ease;
 }
 
-.project-card:hover {
+.project-box:hover {
   transform: translateY(-5px);
 }
 
-.project-card h3 {
+.project-box h3 {
   margin-top: 0;
-  font-size: 1.4rem;
-  color: #2c3e50;
+  font-size: 1.6rem;
 }
 
-.project-card p {
-  margin: 0.5rem 0 1rem;
-  color: #333;
-}
-
-.project-card a {
+.project-box a {
+  display: inline-block;
+  margin-top: 1rem;
   color: #2c3e50;
   font-weight: bold;
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .project-grid {
-    grid-template-columns: 1fr;
+/* Responsive für kleinere Geräte */
+@media (max-width: 1024px) {
+  .project-box {
+    flex: 1 1 calc(50% - 1.5rem); /* zwei pro Zeile */
+  }
+}
+
+@media (max-width: 600px) {
+  .project-box {
+    flex: 1 1 100%; /* eine pro Zeile */
   }
 }
 
