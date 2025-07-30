@@ -82,6 +82,55 @@ nav ul li a:hover {
   margin-top: 1rem;
   color: #111;
 }
+/* New wrapper for hero text and image side-by-side */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex: 1; /* fills the rest of header */
+  width: 100%;
+  margin-top: 2rem;
+  flex-wrap: wrap; /* makes it responsive */
+}
+
+/* Adjust hero-text to fit side-by-side */
+.hero-text {
+  flex: 1 1 50%;
+  max-width: 50%;
+  margin-bottom: 2rem;
+}
+
+/* Image container */
+.hero-image {
+  flex: 1 1 50%;
+  max-width: 50%;
+  text-align: right;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px; /* Rounded corners (optional) */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Optional depth */
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .hero-text, .hero-image {
+    max-width: 100%;
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 2rem;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 footer {
   background-image: url('images/image.jpg');
