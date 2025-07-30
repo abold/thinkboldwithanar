@@ -13,7 +13,7 @@ body {
   color: #111;
 }
 
-/* Optional: Hintergrund-overlay für bessere Lesbarkeit */
+/* Optional: Hintergrund-overlay für bessere Lesbarkeit 
 body::before {
   content: "";
   position: fixed;
@@ -24,3 +24,4 @@ body::before {
   pointer-events: none; /* Klicks nicht blockieren */
   z-index: -1;
 }
+*/
