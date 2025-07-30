@@ -20,10 +20,10 @@ header {
   background: #e2ece9;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
-  padding: 1rem 3rem;
+  padding: 4rem 3rem 2rem 3rem; /* mehr padding oben */
   box-sizing: border-box;
+  justify-content: flex-start; /* damit Inhalt nicht mittig sitzt */
 }
 
 nav {
